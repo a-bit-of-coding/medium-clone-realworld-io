@@ -22,7 +22,6 @@ import {
   tagsFeatureKey,
   tagsReducer,
 } from './app/shared/components/popular-tags/store/reducers'
-import {AddToFavoritesService} from './app/shared/components/add-to-favorites/services/add-to-favorites.service'
 
 bootstrapApplication(AppComponent, {
   providers: [
@@ -48,6 +47,5 @@ bootstrapApplication(AppComponent, {
       trace: false,
       traceLimit: 75,
     }),
-    AddToFavoritesService,
   ],
 })
